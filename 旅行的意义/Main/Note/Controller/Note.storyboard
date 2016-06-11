@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ncD-nE-foK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="b3V-RQ-sHP">
+            <objects>
+                <navigationController id="ncD-nE-foK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mxV-H7-yL2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w4h-oX-pkk" kind="relationship" relationship="rootViewController" id="9QR-3D-YDR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfM-RF-Pqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="137"/>
+        </scene>
+        <!--收藏的行程单-->
+        <scene sceneID="jBj-3R-GW2">
+            <objects>
+                <viewController id="w4h-oX-pkk" customClass="NoteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xb-vY-AqR"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFR-rf-7Sx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y8H-vx-JTz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-3k-En6">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="w4h-oX-pkk" id="GfC-nq-ytS"/>
+                                    <outlet property="delegate" destination="w4h-oX-pkk" id="Wg8-aI-QTj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KFR-rf-7Sx" firstAttribute="top" secondItem="m9H-3k-En6" secondAttribute="bottom" id="Cj0-Rw-ieT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m9H-3k-En6" secondAttribute="trailing" constant="-20" id="KAV-63-nzY"/>
+                            <constraint firstItem="m9H-3k-En6" firstAttribute="top" secondItem="2xb-vY-AqR" secondAttribute="bottom" constant="-64" id="Tcr-FS-lqd"/>
+                            <constraint firstItem="m9H-3k-En6" firstAttribute="leading" secondItem="Y8H-vx-JTz" secondAttribute="leadingMargin" constant="-20" id="Xei-Kl-8sB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="收藏的行程单" id="rTh-Lj-vyB"/>
+                    <connections>
+                        <outlet property="tabView" destination="m9H-3k-En6" id="ZZ0-k5-OJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Se1-tN-nnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="313"/>
+        </scene>
+    </scenes>
+</document>

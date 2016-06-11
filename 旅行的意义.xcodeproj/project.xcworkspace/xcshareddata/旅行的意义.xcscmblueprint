@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E6AC3F17262BC8179F7491627C7213677D21D8CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6AC3F17262BC8179F7491627C7213677D21D8CA" : 0,
+    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DFDDB591-FCFA-4A07-A9C8-F1B7424BE88D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6AC3F17262BC8179F7491627C7213677D21D8CA" : "%E6%97%85%E8%A1%8C%E7%9A%84%E6%84%8F%E4%B9%89\/",
+    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "旅行的意义",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "旅行的意义.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waydechou\/MarsMock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waydechou\/-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6AC3F17262BC8179F7491627C7213677D21D8CA"
+    }
+  ]
+}
