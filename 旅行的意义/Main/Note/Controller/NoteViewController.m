@@ -59,8 +59,7 @@
     NSString *filepath = [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/com.CL.HDU.-----.plist"];
     
     _planDic = [NSMutableDictionary dictionaryWithContentsOfFile:filepath];
-    NSLog(@"%@", _planDic);
-//    _keyArray = [_planDic allKeys];
+
     [_tabView reloadData];
 
 }

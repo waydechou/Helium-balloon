@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E6AC3F17262BC8179F7491627C7213677D21D8CA",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "963EF2A279799A16F0D426A5CDA26DBD7901EDB0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : 0,
     "E6AC3F17262BC8179F7491627C7213677D21D8CA" : 0,
-    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : 0
+    "963EF2A279799A16F0D426A5CDA26DBD7901EDB0" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DFDDB591-FCFA-4A07-A9C8-F1B7424BE88D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : "",
     "E6AC3F17262BC8179F7491627C7213677D21D8CA" : "%E6%97%85%E8%A1%8C%E7%9A%84%E6%84%8F%E4%B9%89\/",
-    "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE" : ""
+    "963EF2A279799A16F0D426A5CDA26DBD7901EDB0" : "%E6%B0%A2%E6%B0%94%E7%90%83\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "旅行的意义",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waydechou\/MarsMock.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F7C34869E17FFAC3DD711067C7EA8C5885ACBDE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waydechou\/Helium-balloon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "963EF2A279799A16F0D426A5CDA26DBD7901EDB0"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waydechou\/-iOS.git",

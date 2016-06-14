@@ -162,10 +162,9 @@
 #pragma -mark 结构的搭建
 
 - (void)loadData {
-    
      DataArray = [NSMutableArray array];
+
     [DataService requestWithURL:@"destinations/nearby.json?lat=30.32358509206055&lng=120.3522004637683" params:nil fileData:nil httpMethod:@"GET" success:^(NSURLSessionDataTask *task, id result) {
-        NSLog(@"%@", result);
         NSArray *dataArray = result[@"data"];
        
         [dataArray enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -187,7 +186,6 @@
     
     DataArray2 = [NSMutableArray array];
     [DataService requestWithURL:@"destinations/list.json?area=china" params:nil fileData:nil httpMethod:@"GET" success:^(NSURLSessionDataTask *task, id result) {
-        NSLog(@"%@", result);
         NSArray *dataArray = result[@"data"];
         
         [dataArray enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -210,7 +208,6 @@
     DataArray3 = [NSMutableArray array];
     
     [DataService requestWithURL:@"destinations/list.json?area=asia" params:nil fileData:nil httpMethod:@"GET" success:^(NSURLSessionDataTask *task, id result) {
-        NSLog(@"%@", result);
         NSArray *dataArray = result[@"data"];
         
         [dataArray enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {

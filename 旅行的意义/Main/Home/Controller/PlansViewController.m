@@ -65,17 +65,13 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
     [self.view addSubview:copyButton];
-
-    
 }
-
 
 #pragma mark -加载数据
 - (void)loadData {
     NSString *url = [NSString stringWithFormat:@"plans/%ld.json", _plan_ID];
     
     [DataService requestWithURL:url params:nil fileData:nil httpMethod:@"GET" success:^(NSURLSessionDataTask *task, id result) {
-//        NSLog(@"%@", result);
         
         dataArr = result[@"data"][@"days"];
         mapDic = result[@"data"][@"destination"];
@@ -122,7 +118,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    NSLog(@"%li", section);
     NSArray *rowArr = dataArr[section][@"points"];
     return rowArr.count;
 }
@@ -134,29 +129,23 @@
     cell.model = model;
    
     if (isExpand[indexPath.section][indexPath.row]) {
-        
         cell.imgView.frame = CGRectMake(0, cell.addressLable.bottom + 10, kScreenWidth, 200);
         CGRect desRect = [model.introduce boundingRectWithSize:CGSizeMake(kScreenWidth - 20, 9999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:16]} context:NULL];
         cell.desLable.frame = CGRectMake(10, cell.imgView.bottom + 10, kScreenWidth - 20, desRect.size.height + 40);
-        
-        
-        
     }else {
-        
         cell.imgView.frame = CGRectZero;
         cell.desLable.frame = CGRectZero;
-       
     }
     
     return cell;
 }
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     isExpand[indexPath.section][indexPath.row] = !isExpand[indexPath.section][indexPath.row];
     [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation: UITableViewRowAnimationFade];
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (isExpand[indexPath.section][indexPath.row]) {
         PlanModel *model = [modelDic objectForKey:@(indexPath.section)][indexPath.row];
@@ -167,8 +156,7 @@
 }
 #pragma mark -头视图
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    
+
     if (section == 0) {
         
         //地图的处理
@@ -195,14 +183,11 @@
                 
                 annotion.title = [NSString stringWithFormat:@"%d", i];
                 annotion.subtitle = [NSString stringWithFormat:@"%d", i];
-                
-                
+
                 [_mapView addAnnotation:annotion];
              
             }
         }
-        
-       
 
     }else {
         _mapView.frame = CGRectZero;
@@ -223,17 +208,12 @@
 //    view.backgroundColor = [UIColor whiteColor];
     view.userInteractionEnabled = YES;
     
-
-    
- 
-    
     [view addSubview:dayLable];
     [view addSubview:desLable];
     [view addSubview:_mapView];
     return view;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
  
     CGRect desRect = [dataArr[section][@"description"] boundingRectWithSize:CGSizeMake(kScreenWidth - 20, 9999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:16]} context:NULL];
     
