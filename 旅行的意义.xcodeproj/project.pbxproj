@@ -873,7 +873,7 @@
 				TargetAttributes = {
 					5DD711A61CF68032006EE83F = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 72CETLREJT;
+						DevelopmentTeam = 7LSR27654J;
 					};
 					5DD711BF1CF68032006EE83F = {
 						CreatedOnToolsVersion = 7.1;
@@ -1177,7 +1177,7 @@
 				GCC_PREFIX_HEADER = "$SRCROOT/旅行的意义/Travel.pch";
 				INFOPLIST_FILE = "旅行的意义/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CL.HDU.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "Wayde-C..Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1192,7 +1192,7 @@
 				GCC_PREFIX_HEADER = "$SRCROOT/旅行的意义/Travel.pch";
 				INFOPLIST_FILE = "旅行的意义/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CL.HDU.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "Wayde-C..Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
